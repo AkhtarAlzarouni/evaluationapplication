@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_margin="9dp"
+    android:layout_height="400dp"
+    android:layout_marginBottom="30dp"
+
+
+    >
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="900dp"
+        android:background="@drawable/background_h"
+        android:orientation="vertical"
+        android:layout_marginStart="30dp"
+      >
+
+        <ImageView
+            android:id="@+id/Txt"
+            android:layout_margin="8dp"
+            android:src="@drawable/car"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:layout_height="60dp"
+            android:text="Code Academy"
+            android:textStyle="bold"
+            android:textSize="14dp"/>
+
+
+        <TextView
+            android:id="@+id/contentTextView"
+            android:layout_margin="7dp"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:textColor="#ff3d00"
+            android:layout_height="wrap_content"
+            android:text="The course topics have been covered in sufficient detail"
+            android:textStyle="bold"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/Txt2"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:textColor="#78909c"
+            android:layout_height="wrap_content"
+            android:text="Rate from one to five"
+            android:textStyle="bold"
+            android:textSize="14dp"/>
+
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/Txt4"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:textColor="#78909c"
+            android:layout_height="wrap_content"
+            android:text="هل توجد لديك ملاحظات أخرى؟ "
+            android:textStyle="bold"
+            android:textSize="14dp"/>
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@drawable/sh1"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="send"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"/>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
