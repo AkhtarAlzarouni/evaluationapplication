@@ -2,10 +2,12 @@ package com.example.evaluationapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.Toast;
@@ -16,12 +18,16 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity{
     private ListView postListView;
 
+    Button button;
+
     //String[] lan = {"Python", "Java", "C#", ".net"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
 
         postListView = findViewById(R.id.postListView);
 
@@ -30,7 +36,10 @@ public class MainActivity extends AppCompatActivity{
         postListView.setAdapter(adapter);
 
 
+
+
     }
+
 
 //    Spinner spinner = findViewById(R.id.spinner1);
 //    ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_spinner_item, lan);
@@ -44,6 +53,15 @@ public class MainActivity extends AppCompatActivity{
         posts.add(new Post("أنصح باستمرار طرح هذه الدورة في المسار"));
         posts.add(new Post("يوجد تنوع في الوسائل التدريبية المستخدمة"));
 
+
+//        button=findViewById(R.id.but);
+//        button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent i = new Intent(MainActivity.this,MainActivity2.class);
+//                startActivity(i);
+//            }
+//        });
         // Add more posts here
 //        adapter2.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
 //        spinner.setAdapter(adapter2);
@@ -59,7 +77,10 @@ public class MainActivity extends AppCompatActivity{
 //
 //            }
 //        });
+
         return posts;
+
+
 
     }
 
